@@ -1,0 +1,98 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #111; /* Fondo negro */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 100%;
+    width: 100%;
+    max-width: 500px;
+    margin: 20px; /* Añadido margen para evitar que se pegue a los bordes */
+    padding: 20px;
+    background-color: #222; /* Fondo oscuro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+h1 {
+    color: #d4af37; /* Dorado */
+    font-size: 24px;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+label {
+    font-size: 16px;
+    margin-bottom: 5px;
+    display: block;
+    color: #ddd;
+}
+
+/* Ajustes para los inputs y selects */
+input, select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: 1px solid #444;
+    background-color: #333;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box; /* Asegura que el padding se incluya en el ancho total */
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #d4af37; /* Dorado */
+}
+
+/* Botón */
+button {
+    width: 100%;
+    padding: 15px;
+    background-color: #d4af37; /* Dorado */
+    color: #111;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-sizing: border-box; /* Incluye el padding en el cálculo del ancho total */
+}
+
+button:hover {
+    background-color: #b8972d; /* Dorado más oscuro */
+}
+
+/* Estilo para el resultado */
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #ddd;
+}
+
+/* Estilos para la responsividad */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Reducir el padding en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    input, select, button {
+        font-size: 14px;
+    }
+}

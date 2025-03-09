@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculador Fitness</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Calculador Fitness</h1>
+    <label for="gender">Genero</label>
+    <select id="gender">
+        <option value="male">Masculino</option>
+        <option value="female">Femenino</option>
+    </select>
+
+    <label for="age">Edad</label>
+    <input type="number" id="age" placeholder="Ingresa tu edad">
+
+    <label for="weight">Peso (kg)</label>
+    <input type="number" id="weight" placeholder="Ingresa tu peso">
+
+    <label for="height">Altura (cm)</label>
+    <input type="number" id="height" placeholder="Ingresa tu altura">
+
+    <label for="activity">Nivel de actividad</label>
+    <select id="activity">
+        <option value="sedentary">Sedentario (poco o ningun ejercicio)</option>
+        <option value="light">Ligero (ejercicio ligero o deportes 1-3 dias a la semana)</option>
+        <option value="moderate">Moderado (ejercicio moderado o deportes 3-5 dias a la semana)</option>
+        <option value="active">Activo (ejercicio intenso o deportes 6-7 dias a la semana)</option>
+        <option value="very_active">Muy activo (ejercicio muy intenso o trabajo fisico muy demandante)</option>
+    </select>
+
+    <button onclick="calculateCalories()">Calcular Calorias</button>
+
+    <div class="result" id="result"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
